@@ -4,7 +4,7 @@ it('Selecionar a data de nascimento', function(){
     cy.visit('/datepicker')
 
     const date = {
-        month: 'fev',
+        month: 'Feb',
         year: '1983',
         day: '1',
     }
