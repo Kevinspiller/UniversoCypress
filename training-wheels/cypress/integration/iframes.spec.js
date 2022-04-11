@@ -6,9 +6,9 @@ const niceIFrame = function(){
         .then(cy.wrap)
 }
 
-it('Deve validar o total de seguidores',function(){
+it('Deve validar o nome do perfil',function(){
     cy.visit('/nice_iframe')
 
-    niceIFrame().find('.FollowerCountText')
-    .should('have.text','6,447 followers')
+    niceIFrame().find('.UsernameText')
+    .should('have.text','qa.ninja')
 })
